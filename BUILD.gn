@@ -26,4 +26,7 @@ ohos_cargo_crate("lib") {
     cargo_pkg_name = "libloading"
     cargo_pkg_description = "Bindings around the platform's dynamic library loading primitives with greatly improved memory safety."
     deps = ["//third_party/rust/crates/cfg-if:lib"]
+    module_output_extension = ".rlib"
+    part_name = "rust_autocfg"
+    subsystem_name = "thirdparty"
 }
